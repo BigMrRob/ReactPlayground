@@ -1,0 +1,27 @@
+.Example {
+  width: 900px;
+  margin: auto;
+  border: 1px solid;
+  height: 400px;
+
+  // The "&" Sign means use the parent selector (.Example) plus the new selector defined below.
+  &Header {
+    // Same as .ExampleHeader
+    color: purple;
+    text-align: center;
+  }
+
+  &Box {
+    // Same as .ExampleBox
+    width: 50%;
+    height: 50%;
+    border: 1px solid;
+    margin: auto;
+
+    &Details {
+      // Same as .ExampleBoxDetails
+      color: purple;
+      text-align: center;
+    }
+  }
+}
