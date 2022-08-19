@@ -1,27 +1,30 @@
-.Example {
-  width: 900px;
-  margin: auto;
+.PageWrapper {
   border: 1px solid;
-  height: 400px;
-
-  // The "&" Sign means use the parent selector (.Example) plus the new selector defined below.
-  &Header {
-    // Same as .ExampleHeader
-    color: purple;
-    text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.Form {
+  border: 1px solid red;
+  padding: 40px;
+  &InputWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px;
   }
-
-  &Box {
-    // Same as .ExampleBox
-    width: 50%;
-    height: 50%;
-    border: 1px solid;
-    margin: auto;
-
-    &Details {
-      // Same as .ExampleBoxDetails
-      color: purple;
-      text-align: center;
-    }
+  &Input {
+    padding: 5px;
+  }
+}
+.Button {
+  &Wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+  &Cancel {
+  }
+  &SignUp {
+    background-color: rgb(70, 1, 70);
+    color: white;
   }
 }
