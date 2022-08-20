@@ -1,6 +1,8 @@
-import styles from "../styles/Home.module.scss";
-
+import styles from "../styles/pages/Home.module.scss";
+import { useRouter } from "next/router";
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className={styles.PageWrapper}>
       <form className={styles.Form}>
@@ -19,7 +21,12 @@ export default function Home() {
       </form>
       <div className={styles.ButtonWrapper}>
         <button className={styles.ButtonCancel}>Cancel</button>
-        <button className={styles.ButtonSignUp}>Sign Up</button>
+        <button
+          className={styles.ButtonSignUp}
+          onClick={() => router.push("/dashboard")}
+        >
+          Sign Up
+        </button>
       </div>
 
       {/* <h1>Build your form here</h1>
