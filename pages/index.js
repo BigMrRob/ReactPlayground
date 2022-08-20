@@ -7,16 +7,16 @@ export default function Home() {
     <div className={styles.PageWrapper}>
       <form className={styles.Form}>
         <div className={styles.FormInputWrapper}>
-          <input className={styles.FormInput} placeholder="First Name"></input>
+          <input className={styles.FormInput} placeholder="First Name*"></input>
         </div>
         <div className={styles.FormInputWrapper}>
-          <input className={styles.FormInput}></input>
+          <input className={styles.FormInput} placeholder="Last Name*"></input>
         </div>
         <div className={styles.FormInputWrapper}>
-          <input className={styles.FormInput}></input>
+          <input className={styles.FormInput} placeholder="Email*"></input>
         </div>
         <div className={styles.FormInputWrapper}>
-          <input className={styles.FormInput}></input>
+          <input className={styles.FormInput} placeholder="Password*"></input>
         </div>
       </form>
       <div className={styles.ButtonWrapper}>

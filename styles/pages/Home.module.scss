@@ -1,30 +1,42 @@
 .PageWrapper {
-  border: 1px solid;
+  border: 20px solid rgb(185, 184, 184);
   width: 70%;
   margin: auto;
 }
 .Form {
-  border: 1px solid red;
-  padding: 40px;
   &InputWrapper {
     display: flex;
     flex-direction: column;
-    margin: 16px 0px;
+    border-bottom: 1px solid rgb(185, 184, 184);
+    margin: 20px 10px;
   }
   &Input {
-    padding: 5px;
+    padding: 15px;
+    background-color: rgb(243, 240, 240);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-width: 0px;
   }
 }
 .Button {
   &Wrapper {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 10px 0;
   }
   &Cancel {
+    background-color: rgb(243, 240, 240);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px;
   }
   &SignUp {
-    background-color: rgb(70, 1, 70);
+    background-color: blue;
     color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    box-shadow: 1px 1px;
   }
 }
