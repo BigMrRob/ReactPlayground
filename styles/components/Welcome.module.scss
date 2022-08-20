@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+
+.Welcome {
+  width: 400px;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: $box-shadow-light;
+}

@@ -1,43 +1,21 @@
+import React, { useState } from "react";
+import Welcome from "../components/Welcome";
 import styles from "../styles/pages/Home.module.scss";
-import { useRouter } from "next/router";
+import Signup from "../components/Signup";
+import Login from "../components/Login";
 export default function Home() {
-  const router = useRouter();
+  const [formView, setFormView] = useState("welcome");
 
   return (
-    <div className={styles.PageWrapper}>
-      <form className={styles.Form}>
-        <div className={styles.FormInputWrapper}>
-          <input className={styles.FormInput} placeholder="First Name*"></input>
-        </div>
-        <div className={styles.FormInputWrapper}>
-          <input className={styles.FormInput} placeholder="Last Name*"></input>
-        </div>
-        <div className={styles.FormInputWrapper}>
-          <input className={styles.FormInput} placeholder="Email*"></input>
-        </div>
-        <div className={styles.FormInputWrapper}>
-          <input className={styles.FormInput} placeholder="Password*"></input>
-        </div>
-      </form>
-      <div className={styles.ButtonWrapper}>
-        <button className={styles.ButtonCancel}>Cancel</button>
-        <button
-          className={styles.ButtonSignUp}
-          onClick={() => router.push("/dashboard")}
-        >
-          Sign Up
-        </button>
-      </div>
-
-      {/* <h1>Build your form here</h1>
-      <h2>Define the styles in Home.module.scss</h2>
-
-      <div className={styles.Example}>
-        <h2 className={styles.ExampleHeader}>This is an example header</h2>
-        <div className={styles.ExampleBox}>
-          <p className={styles.ExampleBoxDetails}>These are example details</p>
-        </div>
-      </div> */}
+    <div className={styles.HomeWrapper}>
+      {formView === "welcome" ? (
+        <Welcome setFormView={setFormView} />
+      ) : formView === "login" ? (
+        <Login setFormView={setFormView} />
+      ) : (
+        formView === "signup" && <Signup setFormView={setFormView} />
+      )}
+      ;
     </div>
   );
 }

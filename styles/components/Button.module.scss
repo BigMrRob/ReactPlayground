@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+.Button {
+  padding: 10px;
+  border-radius: 5px;
+  appearance: button;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Graphik, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  padding: 12px 16px;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  touch-action: manipulation;
+  width: fit-content;
+  border: none;
+  box-shadow: $box-shadow-heavy;
+  &Light {
+    background-color: $white;
+    color: $color-primary-9;
+  }
+  &Dark {
+    background-color: $color-primary-8;
+    color: $white;
+  }
+}
