@@ -1,0 +1,39 @@
+// Primary Colors
+$color-primary-1: #caf0f8;
+$color-primary-2: #ade8f4;
+$color-primary-3: #90e0ef;
+$color-primary-4: #48cae4;
+$color-primary-5: #00b4d8;
+$color-primary-6: #0096c7;
+$color-primary-7: #0077b6;
+$color-primary-8: #023e8a;
+$color-primary-9: #03045e;
+
+// White-Black Colors
+$white: #fff;
+$gray-100: #fafafa;
+$gray-200: #f7f7f7;
+$gray-300: #e8e8e9;
+$gray-400: #aeaeb2;
+$gray-600: #5d5d66;
+$gray-700: #393944;
+$gray-800: #23232f;
+$gray-900: #171724;
+$black: #000;
+
+// Box Shadows
+$box-shadow-heavy: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+  rgba(0, 0, 0, 0.22) 0px 10px 10px;
+$box-shadow-light: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+:export {
+  colorPrimary1: $color-primary-1;
+  colorPrimary2: $color-primary-2;
+  colorPrimary3: $color-primary-3;
+  colorPrimary4: $color-primary-4;
+  colorPrimary5: $color-primary-5;
+  colorPrimary6: $color-primary-6;
+  colorPrimary7: $color-primary-7;
+  colorPrimary8: $color-primary-8;
+  colorPrimary9: $color-primary-9;
+}
