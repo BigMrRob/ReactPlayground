@@ -34,11 +34,11 @@ const Landing = () => {
       </Center>
 
       <Modal isOpen={formView === "login"} onClose={() => setFormView("")}>
-        <Login />
+        <Login setFormView={setFormView} />
       </Modal>
 
       <Modal isOpen={formView === "signup"} onClose={() => setFormView("")}>
-        <Signup />
+        <Signup setFormView={setFormView} />
       </Modal>
     </>
   );
