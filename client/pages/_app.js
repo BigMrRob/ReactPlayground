@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={extendTheme({ brand: variables })}>
       <Layout>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </Layout>
     </ChakraProvider>
   );
